@@ -109,4 +109,20 @@ width: 100%!important;
 margin-top: 2vw;
 padding: 5px;
 }
+    .footer {
+  height: 500px;
+}
+ footer .heroSecColor{
+        height: 500px;
+
+}
+}
+@media (max-width: 768px) {
+    .footer {
+  height: 600px;
+}
+ footer .heroSecColor{
+        height: 600px;
+
+}
 }
