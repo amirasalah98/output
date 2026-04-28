@@ -118,24 +118,24 @@ function OffcanvasExample() {
       </Container> */}
 
       <Modal show={showSignin} onHide={() => setShowSignin(false)} centered>
-        <Modal.Body className='p-4 rounded-4'>
+        <Modal.Body className={`p-4 rounded-2 ${style.formModal}`}>
           <h3 className='fw-bold mb-4 text-center'>Welcome Back</h3>
           <Form onSubmit={handleSignin}>
-            <Form.Control className='mb-3 rounded-4 py-3' placeholder='Email' value={signin.email} onChange={(e) => setSignin({ ...signin, email: e.target.value })} />
-            <Form.Control className='mb-3 rounded-4 py-3' type='password' placeholder='Password' value={signin.password} onChange={(e) => setSignin({ ...signin, password: e.target.value })} />
-            <Button type='submit' className='w-100 rounded-4 py-3 fw-bold'>Login</Button>
+            <Form.Control className='mb-3 rounded-2 py-2' placeholder='Email' value={signin.email} onChange={(e) => setSignin({ ...signin, email: e.target.value })} />
+            <Form.Control className='mb-3 rounded-2 py-2' type='password' placeholder='Password' value={signin.password} onChange={(e) => setSignin({ ...signin, password: e.target.value })} />
+            <Button type='submit' className={`m-auto  w-100 ${style.secondaryBtn}`}>Login</Button>
           </Form>
         </Modal.Body>
       </Modal>
 
       <Modal show={showSignup} onHide={() => setShowSignup(false)} centered>
-        <Modal.Body className='p-4 rounded-4'>
+        <Modal.Body className={`p-4 rounded-2 ${style.formModal}`}>
           <h3 className='fw-bold mb-4 text-center'>Create Account</h3>
           <Form onSubmit={handleSignup}>
-            <Form.Control className='mb-3 rounded-4 py-3' placeholder='Name' value={signup.name} onChange={(e) => setSignup({ ...signup, name: e.target.value })} />
-            <Form.Control className='mb-3 rounded-4 py-3' placeholder='Email' value={signup.email} onChange={(e) => setSignup({ ...signup, email: e.target.value })} />
-            <Form.Control className='mb-3 rounded-4 py-3' type='password' placeholder='Password' value={signup.password} onChange={(e) => setSignup({ ...signup, password: e.target.value })} />
-            <Button type='submit' className='w-100 rounded-4 py-3 fw-bold'>Create Account</Button>
+            <Form.Control className='mb-3 rounded-2 py-2' placeholder='Name' value={signup.name} onChange={(e) => setSignup({ ...signup, name: e.target.value })} />
+            <Form.Control className='mb-3 rounded-2 py-2' placeholder='Email' value={signup.email} onChange={(e) => setSignup({ ...signup, email: e.target.value })} />
+            <Form.Control className='mb-3 rounded-2 py-2' type='password' placeholder='Password' value={signup.password} onChange={(e) => setSignup({ ...signup, password: e.target.value })} />
+            <Button type='submit'  className={`m-auto w-100  ${style.secondaryBtn}`}>Create Account</Button>
           </Form>
         </Modal.Body>
       </Modal>

@@ -52,10 +52,10 @@
 
 }
 
-.secondaryBtn:hover {
-  background-color: #cfb361;
+.secondaryBtn:hover, .secondaryBtn:active {
+  background-color: #cfb361!important;
   color: #fff;
-  border: 2px solid #cfb361;
+  border: 2px solid #cfb361!important;
 }
 .primaryBtn {
   background-color: #f0f2f1;
@@ -138,6 +138,14 @@
   width: 30%;
   right: 5%;
   left: 5%;
+}
+.formModal{
+  background-color: #011029;
+   box-shadow: rgba(0, 0, 0, 0.075) 0px 5px 15px 0px;
+   border: 2px solid #cfb361;
+}
+.formModal h3{
+  color: #f0f2f1;
 }
 @media (max-width: 991px) {
 .offcanvasCustom :global(.nav-link) {
