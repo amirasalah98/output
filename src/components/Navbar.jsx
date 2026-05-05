@@ -220,7 +220,7 @@ const showMessage = (text) => {
       </Navbar>
 
       {/* ================= SIGNUP MODAL ================= */}
-      <Modal show={showSignup} onHide={() => setShowSignup(false)} centered>
+      {/* <Modal show={showSignup} onHide={() => setShowSignup(false)} centered>
         <Modal.Body className={`p-4 ${style.formModal}`}>
           <h3 className="text-center mb-4">Create Account</h3>
 
@@ -254,10 +254,10 @@ const showMessage = (text) => {
             </Button>
           </Form>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
 
       {/* ================= SIGNIN MODAL ================= */}
-      <Modal show={showSignin} onHide={() => setShowSignin(false)} centered>
+      {/* <Modal show={showSignin} onHide={() => setShowSignin(false)} centered>
         <Modal.Body className={`p-4 ${style.formModal}`}>
           <h3 className="text-center mb-4">Sign In</h3>
 
@@ -283,14 +283,14 @@ const showMessage = (text) => {
             </Button>
           </Form>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
 
       {/* ================= MESSAGE ================= */}
-     {message && (
+     {/* {message && (
   <div className={style.messageCard}>
     {message}
   </div>
-)}
+)} */}
     </>
   );
 }
