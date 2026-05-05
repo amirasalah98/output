@@ -166,7 +166,9 @@
 .messageCard.fade-out {
   animation: fadeOut 0.4s ease-in forwards;
 }
-
+.swiperBtnColor svg{
+  color:white;
+}
 @keyframes fadeIn {
   from {
     transform: translateY(-10px);

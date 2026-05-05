@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import style from './style.module.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -22,27 +23,9 @@ const carouselPosts = [
 
 function Portfolio() {
   return (
-    <section style={{ padding: '60px 20px' }}>
+    <section style={{ padding: '60px 20px',marginTop:'5vw' }}>
 
-      {/* Top: two featured images side by side */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '20px',
-        marginBottom: '48px'
-      }}>
-        {featured.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Featured ${i + 1}`}
-            style={{ width: '70%',margin:'auto', borderRadius: 12, display: 'block' }}
-          />
-        ))}
-      </div>
-
-      {/* Middle: your text */}
-      <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+      <div style={{ textAlign: 'center' }}>
         <h2 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '12px',color: '#cfb361' }}>
           Why Output
         </h2>
@@ -50,9 +33,21 @@ function Portfolio() {
 We help businesses build strong digital foundations,
  reach the right audience, and achieve measurable growth through strategy, design, and technology.</p>
       </div>
-
-      {/* Bottom: carousel */}
-      <Swiper
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '20px',
+      }}>
+        {featured.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt={`Featured ${i + 1}`}
+            style={{ width: '90%',margin:'auto', borderRadius: 12, display: 'block' }}
+          />
+        ))}
+      </div>
+      <Swiper className={style.swiperBtnColor}
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         navigation
